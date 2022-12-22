@@ -1,0 +1,36 @@
+Data Modeling for Employees Database 
+
+Titles
+-----
+title_id PK string
+title string
+
+Departments 
+----
+dept_no string PK
+dept_name string
+
+Employees
+------
+emp_no PK INT
+emp_title_id string FK >- Titles.title_id
+birth_date DATE
+first_name string
+last_name string 
+sex string
+hire_date DATE
+
+Department_manager
+---------
+dept_no striNG FK >- Departments.dept_no
+emp_no INT FK >- Employees.emp_no
+
+Salaries
+--------
+emp_no INT FK >- Employees.emp_no
+salary INT 
+
+Department_employee
+-------
+emp_no INT FK >- Employees.emp_no
+dept_no striNG FK >- Departments.dept_no
