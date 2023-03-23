@@ -21,11 +21,11 @@ CREATE TABLE "Departments" (
 CREATE TABLE "Employees" (
     "emp_no" INT   NOT NULL,
     "emp_title_id" varchar(30)   NOT NULL,
-    "birth_date" varchar(30)   NOT NULL,
+    "birth_date" DATE  NOT NULL,
     "first_name" varchar(30)   NOT NULL,
     "last_name" varchar(30)   NOT NULL,
     "sex" varchar(30)   NOT NULL,
-    "hire_date" varchar(30)   NOT NULL,
+    "hire_date" DATE NOT NULL,
     CONSTRAINT "pk_Employees" PRIMARY KEY (
         "emp_no"
      )
